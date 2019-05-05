@@ -98,7 +98,8 @@ public class MyController {
     }
     @RequestMapping(value = "/customers/{id}", method = RequestMethod.GET)
     public String getCusomer(@PathVariable int id) {
-        return "<div style=\"text-align:center;\">" +  cService.findById(id).toString() + "</div>";
+        //return "<div style=\"text-align:center;\">" +  cService.findById(id).toString() + "</div>";
+        return "<h1 style=\"text-align:center\">Customer with id="+id+"</h1><table></table>";
 
     }
 
